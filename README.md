@@ -5,7 +5,7 @@
 ## Usage
 
 ```typescript
-import { StateIterable } from "./mod.ts";
+import { StateIterable } from "https://deno.land/x/redux_state_iterable/mod.ts";
 import { configureStore } from "https://esm.sh/@reduxjs/toolkit?target=deno";
 
 type State = number;
