@@ -20,7 +20,7 @@ export class StateIterable<State> {
 
   private isSubscribed = true;
 
-  constructor(private store: Store<State>) {
+  constructor(protected store: Store<State>) {
     this.unsubscribeCallback = this.store.subscribe(() => {
       this.yields.push(this.store.getState());
 
